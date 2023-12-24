@@ -1,5 +1,5 @@
 #include <Arduino.h>
-#include <Wifi.h>
+#include <WiFi.h>
 #include <ArduinoMqttClient.h>
 #include <microDS18B20.h>
 
@@ -11,12 +11,12 @@
 MicroDS18B20<DS18> sensor;
 
 //Настройка сети
-#define SSID        "SSID_NAME"             // Название сети
-#define PASS        "SSID_PASS"             // Пароль для сети
+#define SSID        "Red8"             // Название сети
+#define PASS        "244466666"             // Пароль для сети
 
 //Настройка MQTT
-#define USERNAME    "username"              // username указанный в dealgate
-#define PASSWORD    "password"              // password указанный в dealgate
+#define USERNAME    "Labalava"              // username указанный в dealgate
+#define PASSWORD    "qwerty"              // password указанный в dealgate
 
 #define BROCKER     "mqtt.dealgate.ru"      //MQTT брокер
 #define PORT        1883                    //Порт для MQTT-соединения
@@ -140,6 +140,8 @@ void loop()
     if (millis() - previousMillis >= INTERVAL)
     {
         digitalWrite(LED_BUILTIN, HIGH);        //Активируем светодиод для индикации отправки данных в MQTT
+
+        sensor.requestTemp();     
 
         temperature = sensor.getTemp();    //Чтиаем показатели термистора
 
