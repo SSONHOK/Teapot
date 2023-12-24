@@ -6,10 +6,10 @@
 2. Настройка профиля:
   * Перейдите в раздел "Профиль".
   * Заполните данные MQTT-сервера в полях "username" и "password". Запомните созданные данные.
-  ![](https://github.com/SSONHOK/Teapot/blob/main/1.png)
+  ![](https://github.com/SSONHOK/Teapot/blob/main/lib/1.png)
 3. Подключение платы:
   * Перейдите к настройкам платы и подключите её согласно схеме.
-  ![](https://github.com/SSONHOK/Teapot/blob/main/2.png)
+  ![](https://github.com/SSONHOK/Teapot/blob/main/lib/2.png)
 4. Изменение данных в коде:
 
   * Скачайте файл main.cpp.
