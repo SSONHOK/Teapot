@@ -9,7 +9,7 @@
   ![](https://github.com/SSONHOK/Teapot/blob/main/1.png)
 3. Подключение платы:
   * Перейдите к настройкам платы и подключите её согласно схеме.
-
+  ![](https://github.com/SSONHOK/Teapot/blob/main/2.png)
 4. Изменение данных в коде:
 
   * Скачайте файл main.cpp.
